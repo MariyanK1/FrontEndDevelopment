@@ -1,0 +1,109 @@
+/*
+Constraints
+* Change the document title to &quot;Forms&quot;
+* Use a form tag
+* Use a fieldset tag with legend - &quot;Customer Details&quot;
+* Each input tag should have a label and should be inside a div
+o The first input field must be focused
+o The 3rd and the 4th input rows should be of type=&quot;radio&quot;
+o The 5th input tag should be of type=&quot;email&quot;
+o The 7th label should have select tag and option tags with the city name values
+o The 8th label should have input tag with type=&quot;number&quot; (with min value - 18 and max value - 70)
+o The 9th label should have datalist tag and option tags with the languages type value
+o The 10th label should have textarea tag with 5 rows and 20 columns
+o The 11th label should have input tag with type=&quot;checkbox&quot; that is checked
+o The 12th label should have input tag with type=&quot;submit&quot;
+* The placeholders are obligatory
+*/
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Customer Details</legend>
+            <div>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="Type here..." autofocus>
+            </div>
+
+            <div>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Type here...">
+            </div>
+
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" id="male">
+
+                <label for="female">Female</label>
+                <input type="radio" id="female">
+            </div>
+
+            <div>
+                <label for="slow">Slow Delivery</label>
+                <input type="radio" id="slow">
+
+                <label for="normal">Normal Delivery</label>
+                <input type="radio" id="normal">
+
+                <label for="express">Express Delivery</label>
+                <input type="radio" id="express">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Type here...">
+            </div>
+
+            <div>
+                <label for="cities">City</label>
+                <select id="cities">
+                    <option>Sofia</option>
+                    <option>Berlin</option>
+                    <option>Kiev</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="number">Age</label>
+                <input type="number" min="18" max="70" placeholder="Type here...">
+            </div>
+
+            <div>
+                <label for="languages">Choose a language:</label>
+                <input list="options" id="languagees" name="languages" />
+
+                <datalist id="options">
+                    <option value="English">
+                    <option value="Bulgarian">
+                    <option value="German">
+                </datalist>
+            </div>
+
+            <div>
+                <label for="textarea">Something you wanna add?</label>
+                <textarea name="textarea" id="textarea" cols="20" rows="5" placeholder="More information..."></textarea>
+            </div>
+
+            <div>
+                <label for="checkbox">I agree with the terms and conditions.</label>
+                <input type="checkbox" checked>
+            </div>
+
+            <div>
+                <input type="submit">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
