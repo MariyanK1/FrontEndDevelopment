@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form attributes</title>
+</head>
+
+<body>
+
+    <main>
+        <li>
+            Action - used to specify where the form data is
+            to be sent to the server after submission of the form.
+        </li>
+
+        <li>Method - The HTTP method that the browser uses to submit the form</li>
+
+        <li>POST - Corresponds to HTTP POST</li>
+
+        <li>methodGET - Corresponds to HTTP GET</li>
+
+    </main>
+
+    <form action="/action_page.php" method="GET">
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="male" value="Gender">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="female" value="Gender">
+        <label for="other">Other</label>
+        <input type="radio" id="other" name="other" value="Gender">
+    </form>
+
+    <footer>
+        <p>&copy;2020-2021</p>
+    </footer>
+
+</body>
+
+</html>
