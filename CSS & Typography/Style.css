@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("./Roboto-Regular.ttf") format("truetype");
+}
+
+p, ul {
+    font-family: "Roboto";
+    line-height: 1.5;
+    text-overflow: clip;
+    word-break: break-all;
+}
